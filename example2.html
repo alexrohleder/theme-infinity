@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="John Doe">
+    <meta name="description" content="John Doe is an awesome web developer from Narnia!">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index,follow">
+    <title>John Doe Portfolio</title>
+    <!-- this scripts must be executed first.-->
+    <!-- modernizr is a library for easily identify browser capability (https://modernizr.com)-->
+    <script src="assets/js/vendor/modernizr.js"></script>
+    <!-- retirna.js replace all the images for they retina ready version (http://imulus.github.io/retinajs)-->
+    <script src="assets/js/vendor/retina.js"></script>
+    <!-- The awesome bootstrap 4.0-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <!-- the fonts used: Montserrat, Open Sans and Satisfy-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700|Work+Sans:300,400,500,600|Satisfy">
+    <!-- The incredible font awesome icon pack-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Theme colors can be easily changed just use the css file you want-->
+    <link rel="stylesheet" href="assets/css/theme-cyan.css">
+  </head>
+  <body>
+    <div class="foreground">
+      <div class="foreground-logotype animated infinite flash">JOHN DOE</div>
+    </div>
+    <!-- this holds all the page html, is used to prevent the mobile browsers-->
+    <!-- navigation bar to automatically hidden.-->
+    <div class="content">
+      <header class="header">
+        <nav class="navbar navbar-transparent navbar-theme">
+          <div class="container"><a href class="navbar-brand">JOHNDOE</a><a class="navbar-toggler hidden-md-up pull-right">☰</a>
+            <div class="navbar-toggleable-sm collapse">
+              <ul class="navbar-nav nav pull-right">
+                <li class="nav-item"><a href="#home" class="nav-link">home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">about</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">skills</a></li>
+                <li class="nav-item"><a href="#experiense" class="nav-link">experiense</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">portfolio</a></li>
+                <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div id="carousel" data-ride="carousel" class="carousel slide">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div style="background-image: url(assets/img/carousel1.jpg" class="carousel-img"></div>
+              <div class="carousel-caption">
+                <h3>I'm The Amazing Developer</h3>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div style="background-image: url(assets/img/carousel2.jpg" class="carousel-img"></div>
+              <div class="carousel-caption">
+                <h3>No One Can Stop Me</h3>
+                <p>Donec dui ante, fermentum non odio quis, sagittis lobortis tellus.</p>
+              </div>
+            </div>
+          </div><a href="#carousel" data-slide="prev" class="left carousel-control"><span class="icon-prev"></span></a><a href="#carousel" data-slide="next" class="right carousel-control"><span class="icon-next"></span></a>
+        </div>
+      </header>
+      <main class="container-fluid">
+        <section id="about" class="row">
+          <h1><span>about</span> PROFESSIONAL DETAILS</h1>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-md-9 m">
+                <p>Morbi volutpat lacus eu tellus cursus sodales. Ut in justo ultricies, tristique nisi luctus, venenatis lectus. Etiam laoreet, neque et accumsan tristique, est justo varius enim, eget commodo erat neque et nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce scelerisque enim porta lectus consequat, sit amet placerat leo molestie. Vestibulum at risus a magna fermentum egestas.</p>
+                <p>Quisque dapibus urna vel turpis pharetra facilisis. Curabitur et urna eu felis interdum posuere non quis dolor. Mauris faucibus lectus ut sodales molestie. Aliquam sit amet leo leo. Maecenas augue velit, facilisis ac efficitur ut, mollis at mauris. Quisque vitae iaculis lectus.</p><a class="btn btn-primary">Download My Resume</a>
+              </div>
+              <div class="col-md-3 hidden-sm-down">
+                <dl>
+                  <dt>Age</dt>
+                  <dd>18</dd>
+                  <dt>Projects</dt>
+                  <dd>6</dd>
+                  <dt>Available Hours</dt>
+                  <dd>4hrs/day</dd>
+                  <dt>What I do</dt>
+                  <dd> 
+                    <ul>
+                      <li>Web & App Development.</li>
+                      <li>SEO content.</li>
+                      <li>Mail Campaign.</li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="skills" class="row">
+          <h1><span>skills</span> THAT I'M PROUD</h1>
+          <div class="container">
+            <div class="row text-left">
+              <div class="col-xs-12 col-md-6">
+                <ul class="progress-list">
+                  <li class="progress-title">95% em HTML5/CSS3</li>
+                  <li class="progress-progress">
+                    <div class="progress">
+                      <div style="width: 95%;" class="progress-bar"></div>
+                    </div>
+                  </li>
+                  <li class="progress-title">88% em JAVASCRIPT</li>
+                  <li class="progress-progress">
+                    <div class="progress">
+                      <div style="width: 88%;" class="progress-bar"></div>
+                    </div>
+                  </li>
+                  <li class="progress-title">99% em PHP</li>
+                  <li class="progress-progress">
+                    <div class="progress">
+                      <div style="width: 99%;" class="progress-bar"></div>
+                    </div>
+                  </li>
+                  <li class="progress-title">94% em DATABASE</li>
+                  <li class="progress-progress">
+                    <div class="progress">
+                      <div style="width: 94%;" class="progress-bar"></div>
+                    </div>
+                  </li>
+                  <li class="progress-title">90% em MOBILE/DESKTOP</li>
+                  <li class="progress-progress">
+                    <div class="progress">
+                      <div style="width: 90%;" class="progress-bar"></div>
+                    </div>
+                  </li>
+                  <li class="progress-title">85% em SERVER</li>
+                  <li class="progress-progress">
+                    <div class="progress">
+                      <div style="width: 85%;" class="progress-bar"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <h2>Tools that I use</h2>
+                <p>Aliquam et ornare urna, in finibus ligula. Vestibulum volutpat nulla quis eleifend ultricies. Nulla scelerisque odio ut rutrum elementum. Proin sagittis aliquet risus.</p><a class="btn btn-sm btn-primary-outline m-r-sm m-b-sm">jQuery</a><a class="btn btn-sm btn-primary-outline m-r-sm m-b-sm">AngularJS</a><a class="btn btn-sm btn-primary-outline m-r-sm m-b-sm">Bootstrap</a><a class="btn btn-sm btn-primary-outline m-r-sm m-b-sm">Grunt</a><a class="btn btn-sm btn-primary-outline m-r-sm m-b-sm">Bower</a><a class="btn btn-sm btn-primary-outline m-r-sm m-b-sm">SASS</a><a class="btn btn-sm btn-primary-outline m-r-sm m-b-sm">Jade</a><a class="btn btn-sm btn-primary-outline m-r-sm m-b-sm">GIT</a><a class="btn btn-sm btn-primary-outline m-r-sm m-b-sm">SVN</a><a class="btn btn-sm btn-primary-outline m-r-sm m-b-sm">NodeJS</a><a class="btn btn-sm btn-primary-outline m-r-sm m-b-sm">Rails</a><a class="btn btn-sm btn-primary-outline m-r-sm m-b-sm">Phonegap</a><a class="btn btn-sm btn-primary-outline m-r-sm m-b-sm">MySQL</a><a class="btn btn-sm btn-primary-outline m-r-sm m-b-sm">Laravel</a><a class="btn btn-sm btn-primary-outline m-r-sm m-b-sm">Postgre</a><a class="btn btn-sm btn-primary-outline m-r-sm m-b-sm">Apache</a><a class="btn btn-sm btn-primary-outline m-r-sm m-b-sm">Nginx</a><a class="btn btn-sm btn-primary-outline m-r-sm m-b-sm">Vagrant</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="experiense" class="row">
+          <h1><span>experiense</span> THAT I'VE LIVED</h1>
+          <div class="container">
+            <h2>Educational</h2>
+            <div class="history">
+              <div class="data">
+                <div class="date">
+                  <h4><small>February</small> 2011</h4><strong>-</strong>
+                  <h4><small>Dezember</small> 2013</h4>
+                </div>
+                <div class="name">
+                  <h4>Harvard <small>Bacharel on Lorem Ipsum</small></h4>
+                </div>
+              </div>
+              <div class="description">convallis convallis eget ligula ac, mollis tincidunt est. In metus lacus, ultricies in erat ut, fringilla dignissim leo. Curabitur a nulla augue. Ut vitae pharetra massa. Praesent venenatis eget turpis et gravida. Quisque nisi ligula, aliquam ut mi vel, sodales varius erat.</div>
+            </div>
+            <div class="history">
+              <div class="data">
+                <div class="date">
+                  <h4><small>February</small> 2014</h4><strong>-</strong>
+                  <h4><small>Dezember</small> 2015</h4>
+                </div>
+                <div class="name">
+                  <h4>massachusetts institute of tech. <small>Doctor in HTML5</small></h4>
+                </div>
+              </div>
+              <div class="description">Curabitur blandit commodo blandit. Integer elit turpis, convallis eget ligula ac, mollis tincidunt est. In metus lacus, ultricies in erat ut, fringilla dignissim leo. Curabitur a nulla augue. Ut vitae pharetra massa. Praesent venenatis eget turpis et gravida. Quisque nisi ligula, aliquam ut mi vel, sodales varius erat.</div>
+            </div>
+            <h2>Professional</h2>
+            <div class="history">
+              <div class="data">
+                <div class="date">
+                  <h4><small>August</small> 2015</h4><strong>-</strong>
+                  <h4>Now</h4>
+                </div>
+                <div class="name">
+                  <h4>Google <small>Front-end Developer</small></h4>
+                </div>
+              </div>
+              <div class="description">Aenean quis hendrerit purus, ac ultricies tellus. In sed massa id sem dapibus blandit. Ut sollicitudin, nisl in elementum pellentesque, purus neque porttitor odio, imperdiet condimentum arcu est a ligula. Phasellus maximus maximus eros ut maximus. Mauris auctor velit libero. Ut malesuada felis nec mollis sollicitudin. Sed congue dolor pharetra, eleifend lacus id, aliquam nibh.</div>
+            </div>
+          </div>
+        </section>
+        <section id="portfolio" class="row">
+          <h1><span>portfolio</span> WITH SELECTED WORKS</h1>
+          <div class="container">
+            <div class="visible-md-up text-center">
+              <button data-items=".filter-items" data-type="*" class="btn btn-primary-outline m-r-sm active">all</button>
+              <button data-items=".filter-items" data-type="web" class="btn btn-primary-outline m-r-sm">web</button>
+              <button data-items=".filter-items" data-type="mobile" class="btn btn-primary-outline m-r-sm">mobile</button>
+            </div>
+            <ul class="filter-items">
+              <li data-type="web" class="filter-item col-xs-12 col-md-4">
+                <figure><img src="assets/img/imac1.png">
+                  <figcaption><a href></a>
+                    <h1>My Awesome Project</h1>
+                    <p>SEE MORE ABOUT</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li data-type="mobile" class="filter-item col-xs-12 col-md-4">
+                <figure><img src="assets/img/mobile1.jpg">
+                  <figcaption><a href></a>
+                    <h1>My Awesome Project</h1>
+                    <p>SEE MORE ABOUT</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li data-type="web" class="filter-item col-xs-12 col-md-4">
+                <figure><img src="assets/img/imac4.png">
+                  <figcaption><a href></a>
+                    <h1>My Awesome Project</h1>
+                    <p>SEE MORE ABOUT</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li data-type="mobile" class="filter-item col-xs-12 col-md-4">
+                <figure><img src="assets/img/mobile2.jpg">
+                  <figcaption><a href></a>
+                    <h1>My Awesome Project</h1>
+                    <p>SEE MORE ABOUT</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li data-type="web" class="filter-item col-xs-12 col-md-4">
+                <figure><img src="assets/img/imac2.png">
+                  <figcaption><a href></a>
+                    <h1>My Awesome Project</h1>
+                    <p>SEE MORE ABOUT</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li data-type="web" class="filter-item col-xs-12 col-md-4">
+                <figure><img src="assets/img/imac3.png">
+                  <figcaption><a href></a>
+                    <h1>My Awesome Project</h1>
+                    <p>SEE MORE ABOUT</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="blog" class="row">
+          <h1><span>blog</span> LATEST POSTS</h1>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-md-4">
+                <div class="card"><img src="assets/img/imac1.png" class="card-img-top img-responsive">
+                  <div class="card-block"><a href="#">
+                      <h4 class="card-title">Lorem Ipsum</h4></a>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text"><small class="text-muted">Posted in <a href="#">Webdesign</a> on October 5, 2015</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4">
+                <div class="card"><img src="assets/img/imac1.png" class="card-img-top img-responsive">
+                  <div class="card-block"><a href="#">
+                      <h4 class="card-title">Lorem Ipsum</h4></a>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text"><small class="text-muted">Posted in <a href="#">Webdesign</a> on October 5, 2015</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4">
+                <div class="card"><img src="assets/img/imac1.png" class="card-img-top img-responsive">
+                  <div class="card-block"><a href="#">
+                      <h4 class="card-title">Lorem Ipsum</h4></a>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text"><small class="text-muted">Posted in <a href="#">Webdesign</a> on October 5, 2015</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="row text-center bg-primary">
+          <h1><span>contact</span> ME RIGHT NOW</h1>
+          <div class="container">
+            <p>Sed vitae tempus odio. Nunc eget mi sem. Maecenas sed justo sit amet nulla mollis consequat a eu sem.</p>
+            <p>Vestibulum non condimentum est, interdum ultricies lorem. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+            <form autocomplete="off" class="contact-form">
+              <div class="inner">
+                <ol class="questions">
+                  <li class="current"><span>
+                      <label for="contact-name">What's your name?</label></span>
+                    <input id="contact-name" name="contact-name" type="text">
+                  </li>
+                  <li><span>
+                      <label for="contact-email">And your e-mail?</label></span>
+                    <input id="contact-email" name="contact-email" type="email">
+                  </li>
+                  <li><span>
+                      <label for="contact-message">What do you want?</label></span>
+                    <input id="contact-message" name="contact-message" type="text">
+                  </li>
+                </ol>
+                <div class="controls">
+                  <button class="next"></button>
+                  <div class="progress"></div><span class="number"><span class="number-current">1</span><span class="number-total"></span></span><span class="error-message"></span>
+                </div>
+                <button class="submit"></button>
+              </div>
+              <h1 class="final-message"></h1>
+            </form>
+            <p>&copy;2015 John Doe the Master of Universe</p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- The js libraries, jQuery for they amazing library (https://jquery.com)-->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- velocity for they incredible fast way to make animations (http://julian.com/research/velocity/)-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+    <!-- and the form.js, one plugin unique for this theme, is a refactor of codrops step form.-->
+    <script src="assets/js/vendor/form.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

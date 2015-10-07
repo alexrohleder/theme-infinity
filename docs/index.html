@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Infinity Theme Docs</title>
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Mobile Internet Explorer allows us to activate ClearType technology for smoothing fonts for easy reading -->
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- Le styles -->
+    <link href="css/bootswatch/Cosmo/bootstrap.min.css" rel="stylesheet">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet">
+    <link href="css/jquery.tocify.css" rel="stylesheet">
+    <link href="css/prettify.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/rainbow/themes/tomorrow-night.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/rainbowlines/theme.css" media="screen" />
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link href="../assets/ico/favicon.ico" rel="shortcut icon">
+    <link href="../assets/ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+    <link href="../assets/ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+    <link href="../assets/ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+    <link href="../assets/ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed">
+  </head>
+
+  <body>     
+
+    <div class="container-fluid" style="margin-top:50px;">
+      <div class="row">
+        <div class="tocify col-sm-3 col-md-3">
+          <div id="toc">
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="col-sm-9 col-md-9">
+          <div class="jumbotron">
+            <h1>Infinity Theme</h1>
+
+            <br><br>
+
+            <h2>Description</h2>
+            <p>Thanks for your acquisition, this theme uses the brand new <a href="http://v4-alpha.getbootstrap.com/components/buttons/" title="See the docs">bootstrap v4</a>, the usage is basically the same but this new version presents new components and several improvements on usability, I personaly encourage you to see, it's amazing!</p>
+            <p>If you run into any other problems with the theme, or encounter any bugs, <a href"https://wrapbootstrap.com/user/alexrohleder">please contact me</a>.</p>
+          </div>
+          
+          <h2>What's Included</h2>
+          <br>
+          <p>Withing your theme you will find the following directories and files, proving both compiled and minified files, as well raw source files.</p>
+          <pre>
+            <code>
+theme/
+  ├── gruntfile.js
+  ├── package.json
+  ├── dist/
+  │   ├── assets/
+  │   │   ├── css
+  │   │   │   ├── min
+  │   │   │   │   └── theme-*.min.css
+  │   │   │   └── theme-*.css
+  │   │   ├── img
+  │   │   └── js
+  │   │       ├─ vendor
+  │   │       │  ├─ form.js
+  │   │       │  ├─ modernizr.js
+  │   │       │  └─ retina.js
+  │   │       └─ main.js
+  │   ├─ example1.html
+  │   └─ example2.html
+  ├── docs/
+  └── src/
+      ├── sass
+      │   ├── themes
+      │   │   └── theme-*.scss
+      │   ├── animation.scss
+      │   ├── buttons.scss
+      │   ├── filter.scss
+      │   ├── form.scss
+      │   ├── header.scss
+      │   ├── history.scss
+      │   ├── homepage.scss
+      │   ├── main.scss
+      │   ├── navbar.scss
+      │   ├── progress.scss
+      │   ├── section.scss
+      │   └── utilities.scss
+      └── jade
+          ├── partials
+          │   ├── sections
+          │   │   ├── about.jade
+          │   │   ├── blog.jade
+          │   │   ├── contact.jade
+          │   │   ├── experiense.jade
+          │   │   ├── portfolio.jade
+          │   │   └── skills.jade
+          ├── templates
+          │   └── master.jade
+          ├─ example1.jade
+          └─ example2.jade
+            </code>
+          </pre>
+          <dl>
+            <dt>/</dt>
+            <dd>Here you will encounter the package and grunt files, this will be helpful for rebuild the theme.</dd>
+            <dt>/dist</dt>
+            <dd>This directory has the compiled and distribution files, like the html, css, js and they minified ones.</dd>
+            <dt>/src</dt>
+            <dd>There is the raw source files of the theme, they are writen in <a href="sass-lang.com">SASS</a> for the CSS and <a href="jade-lang.com">JADE</a> for the HTML</dd>
+          </dl>
+          
+          <h3>Third Party Libraries</h3>
+          <p class="text-warning">Note that this theme support bootstrap 3 but you will not be able to use the cards that are used on the blog section.</p>
+          <p class="text-info">You can use the bootstrap 4 raw scss files to build only the components that you want and continue using bootstrap 3.</p>
+          <p>The theme come with some third party libraries, follow are a list with all:</p>
+          <dl>
+                <dt>Font Awesome</dt>
+                <dd>The iconic font designed for Bootstrap. <a href="http://fontawesome.io/">Website</a>.</dd>
+                <dt>jQuery</dt>
+                <dd>I know you know jQuery. <a href="https://jquery.com">Website</a>.</dd>
+                <dt>Bootstrap 4.0</dt>
+                <dd>The brand new release, yet in beta but you can use without problems. <a href="http://v4-alpha.getbootstrap.com/">Website</a>.
+                <dt>Retina.js</dt>
+                <dd>An open source script that makes it easy to serve high-resolution images to devices with retina displays. <a href="http://imulus.github.io/retinajs/">Website</a>.</dd>
+          </dl>
+
+
+          <h3>Theme Colors</h3>
+          <p class="text-warning">Make sure you are using only 1 of the 19 theme colors.</p>
+          <p>The theme uses out of the box 19 combinations of colors you can use. To change the theme color just update your link to use the <span class="text-muted">/assets/css/theme-*.css</span> of your prefered color. See above and example and a table with all currently supported colors.</p>
+          <code>&lt;link rel="stylesheet" src="assets/css/theme-cyan.css"&gt;</code>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Palette Name</th>
+                <th>Primary Color</th>
+                <th>Primary Color Dark</th>
+                <th>Primary Color Light</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>theme-cyan</td>
+                <td style="background: #00BCD4"></td>
+                <td style="background: #0097A7"></td>
+                <td style="background: #B2EBF2"></td>
+              </tr>
+              <tr>
+                <td>theme-red</td>
+                <td style="background: #F44336"></td>
+                <td style="background: #D32F2F"></td>
+                <td style="background: #FFCDD2"></td>
+              </tr>
+              <tr>
+                <td>theme-pink</td>
+                <td style="background: #E91E63"></td>
+                <td style="background: #C2185B"></td>
+                <td style="background: #F8BBD0"></td>
+              </tr>
+              <tr>
+                <td>theme-purple</td>
+                <td style="background: #9C27B0"></td>
+                <td style="background: #7B1FA2"></td>
+                <td style="background: #E1BEE7"></td>
+              </tr>
+              <tr>
+                <td>theme-deep-purple</td>
+                <td style="background: #673AB7"></td>
+                <td style="background: #512DA8"></td>
+                <td style="background: #D1C4E9"></td>
+              </tr>
+              <tr>
+                <td>theme-indigo</td>
+                <td style="background: #3F5AB5"></td>
+                <td style="background: #303F9F"></td>
+                <td style="background: #C5CAE9"></td>
+              </tr>
+              <tr>
+                <td>theme-blue</td>
+                <td style="background: #2196F3"></td>
+                <td style="background: #1976D2"></td>
+                <td style="background: #BBDEFB"></td>
+              </tr>
+              <tr>
+                <td>theme-light-blue</td>
+                <td style="background: #03A9F4"></td>
+                <td style="background: #0288D1"></td>
+                <td style="background: #B3E5FC"></td>
+              </tr>
+              <tr>
+                <td>theme-teal</td>
+                <td style="background: #009688"></td>
+                <td style="background: #00796B"></td>
+                <td style="background: #B2DFDB"></td>
+              </tr>
+              <tr>
+                <td>theme-green</td>
+                <td style="background: #4CAF50"></td>
+                <td style="background: #388E3C"></td>
+                <td style="background: #C8E6C9"></td>
+              </tr>
+              <tr>
+                <td>theme-light-green</td>
+                <td style="background: #8BC34A"></td>
+                <td style="background: #689F38"></td>
+                <td style="background: #DCEDC8"></td>
+              </tr>
+              <tr>
+                <td>theme-lime</td>
+                <td style="background: #CDDC39"></td>
+                <td style="background: #AFB42B"></td>
+                <td style="background: #F0F4C3"></td>
+              </tr>
+              <tr>
+                <td>theme-yellow</td>
+                <td style="background: #FFEB3B"></td>
+                <td style="background: #FBC02D"></td>
+                <td style="background: #FFF9C4"></td>
+              </tr>
+              <tr>
+                <td>theme-amber</td>
+                <td style="background: #FFC107"></td>
+                <td style="background: #FFA000"></td>
+                <td style="background: #FFECB3"></td>
+              </tr>
+              <tr>
+                <td>theme-orange</td>
+                <td style="background: #FF9800"></td>
+                <td style="background: #F57C00"></td>
+                <td style="background: #FFE0B2"></td>
+              </tr>
+              <tr>
+                <td>theme-deep-orange</td>
+                <td style="background: #FF5722"></td>
+                <td style="background: #E64A19"></td>
+                <td style="background: #FFCCBC"></td>
+              </tr>
+              <tr>
+                <td>theme-brown</td>
+                <td style="background: #795548"></td>
+                <td style="background: #5D4037"></td>
+                <td style="background: #D7CCC8"></td>
+              </tr>
+              <tr>
+                <td>theme-grey</td>
+                <td style="background: #9E9E9E"></td>
+                <td style="background: #616161"></td>
+                <td style="background: #F5F5F5"></td>
+              </tr>
+              <tr>
+                <td>theme-blue-grey</td>
+                <td style="background: #607D8B"></td>
+                <td style="background: #455A64"></td>
+                <td style="background: #CFD8DC"></td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <br>
+
+          <h2>Build</h2>
+          <br>
+          <p>Here are described the proccess to rebuild the theme from the raw source files, the build are made throght <a href="gruntjs.com">grunt</a>. If you are not familiar with that you can read the comments on the <i>/gruntfile.js</i> they describe all the tasks that will be run when you execute the grunt.</p>
+          <p>For start build you only need to run 2 commands, the first are with <a href="https://nodejs.org/en/">npm</a> for installing the theme dev packages</p>
+          <pre>npm install</pre>
+          <p>And the second to start the building. <b>Note that the first command is runned once, after that when you want to rebuild only execute this command:</b></p>
+          <pre>grunt</pre>
+
+          <br>
+          
+          <h2>Utilities</h2>
+          <br>
+          <p>The <a href="http://v4-alpha.getbootstrap.com/components/utilities">Bootstrap 4.0</a> offers several utilities classes out of the box, and the theme only extends this utilities with these padding and margin helpers:</p>
+          <pre>
+            <code data-language="css">
+.m-a-sm { margin:        ($spacer * 0.5)   !important; }
+.m-t-sm { margin-top:    ($spacer-y * 0.5) !important; }
+.m-r-sm { margin-right:  ($spacer-y * 0.5) !important; }
+.m-b-sm { margin-bottom: ($spacer-y * 0.5) !important; }
+.m-l-sm { margin-left:   ($spacer-y * 0.5) !important; }
+.m-x-sm { margin-right:  ($spacer-x * 0.5) !important; margin-left:   ($spacer-x * 0.5) !important; }
+.m-y-sm { margin-top:    ($spacer-y * 0.5) !important; margin-bottom: ($spacer-y * 0.5) !important; }
+
+.p-a-sm { padding:        ($spacer * 0.5)   !important; }
+.p-t-sm { padding-top:    ($spacer-y * 0.5) !important; }
+.p-r-sm { padding-right:  ($spacer-y * 0.5) !important; }
+.p-b-sm { padding-bottom: ($spacer-y * 0.5) !important; }
+.p-l-sm { padding-left:   ($spacer-y * 0.5) !important; }
+.p-x-sm { padding-right:  ($spacer-x * 0.5) !important; padding-left:   ($spacer-x * 0.5) !important; }
+.p-y-sm { padding-top:    ($spacer-y * 0.5) !important; padding-bottom: ($spacer-y * 0.5) !important; }
+            </code>
+          </pre>
+
+          <br>
+          
+          <h2>Contact Form</h2>
+          <br>
+          <p>The contact form is using the codrop's step form plugin in a refactored library to work with sass and jQuery, it need to be initialized by calling a <b>.form()</b> on the form element.</p>
+          <pre>
+            <code data-language="javascript">
+$('#contact form').form({
+  validate: function (input) {
+    // optional.
+    // receive a question input execute some logic
+    // for validating they value and return a boolean.
+  },
+  error: function (input) {
+    // optional.
+    // The callback for making error messages, receives the
+    // question input and returns a string with validation error.
+  },
+  submit: function () {
+    // The callback called when all the inputs are correctly filled.
+  }
+});
+            </code>
+          </pre>
+
+          <h3>Sending E-Mails</h3>
+          <p>This theme includes a fully function way to send e-mail directly from the form without need of a backend, only javascript!</p>
+          <p>For this you will need an account on <a href="https://mandrillapp.com/">Mandrillapp</a> they free plans enable you to send 2.000 e-mails each month. After the account creating you will need to get your <b>API key</b>, for this go to settings on your dashboard and create a new one.</p>
+          <p>And you are ready to use the full functional form, see above the javascript code included on this theme:</p>
+          <pre>
+            <code data-language="javascript">
+function sendEmailWithMandril(data) {
+    $.post('https://mandrillapp.com/api/1.0/messages/send.json', {
+        key: '**you mandrillapp api key**',
+        message: {
+            autotext: 'true',
+            subject: data.name + ' got in touch via portfolio',
+            from_email: data.email,
+            html: '&lt;p&gt;' + data.name + ' &lt;b&gt;' + data.email + '&lt;/b&gt;&lt;/p&gt;&lt;p&gt;' + data.message + '&lt;/p&gt;',
+            to: [{
+                email: '**the email you want to receive the emails**',
+                name : '**your name**',
+                type : 'to'
+            }]
+        }
+    })
+}
+            </code>
+          </pre>
+
+          <h2>Heading</h2>
+          <p>The heading at this point supports all the bootstrap classes including a full height and mobile friendly <b>carousel</b>, for align text in the middle of the screem line on the example1.html you only need a <b>hero</b> class on the markup.</p>
+
+
+      </div>
+      </div><!--/row-->
+          
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/rainbow/rainbow.min.js"></script>
+    <script src="js/rainbow/language/generic.js"></script>
+    <script src="js/rainbow/language/html.js"></script>
+    <script src="js/rainbow/language/css.js"></script>
+    <script src="js/rainbow/language/javascript.js"></script>
+    <script src="js/rainbowlines/rainbow.linenumbers.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.tocify.min.js"></script>
+    <script src="js/prettify.js"></script>
+
+    <script>
+        $(function() {
+
+          $("#toc").tocify({ selectors: "h2, h3, h4", scrollTo: 60, highlightOffset: 60, extendPage: true });
+
+          prettyPrint();
+
+          $(".optionName").popover({ trigger: "hover", container: "body" });
+
+          $("a[href='#']").click(function(event) {
+
+              event.preventDefault();
+
+          });
+
+          Rainbow.color();
+        });
+    </script>
+  
+</div></body></html>

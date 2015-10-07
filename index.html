@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="John Doe">
+    <meta name="description" content="John Doe is an awesome web developer from Narnia!">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index,follow">
+    <title>John Doe Portfolio</title>
+    <!-- this scripts must be executed first.-->
+    <!-- modernizr is a library for easily identify browser capability (https://modernizr.com)-->
+    <script src="assets/js/vendor/modernizr.js"></script>
+    <!-- retirna.js replace all the images for they retina ready version (http://imulus.github.io/retinajs)-->
+    <script src="assets/js/vendor/retina.js"></script>
+    <!-- The awesome bootstrap 4.0-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <!-- the fonts used: Montserrat, Open Sans and Satisfy-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700|Work+Sans:300,400,500,600|Satisfy">
+    <!-- The incredible font awesome icon pack-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Theme colors can be easily changed just use the css file you want-->
+    <link rel="stylesheet" href="assets/css/theme-cyan.css">
+  </head>
+  <body>
+    <!-- this holds all the page html, is used to prevent the mobile browsers-->
+    <!-- navigation bar to automatically hidden.-->
+    <div class="content">
+      <section id="portfolio" style="height:100vh" class="row">
+        <h1><span>examples</span> THAT ARE CURRENTLY AVAILABLE</h1>
+        <div class="container">
+          <div class="visible-md-up text-center">
+            <button data-items=".filter-items" data-type="*" class="btn btn-primary-outline m-r-sm active">all</button>
+            <button data-items=".filter-items" data-type="portfolio" class="btn btn-primary-outline m-r-sm">portfolio</button>
+            <button data-items=".filter-items" data-type="agency" class="btn btn-primary-outline m-r-sm">agency</button>
+          </div>
+          <ul class="filter-items">
+            <li data-type="portfolio" class="filter-item col-xs-12 col-md-4">
+              <figure><img src="assets/img/example1.jpg">
+                <figcaption><a href="example1.html"></a>
+                  <h1>HERO</h1>
+                  <p>SEE LIVE DEMO</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li data-type="agency" class="filter-item col-xs-12 col-md-4">
+              <figure><img src="assets/img/example2.jpg">
+                <figcaption><a href="example2.html"></a>
+                  <h1>CAROUSEL</h1>
+                  <p>SEE LIVE DEMO</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <!-- The js libraries, jQuery for they amazing library (https://jquery.com)-->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- velocity for they incredible fast way to make animations (http://julian.com/research/velocity/)-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+    <!-- and the form.js, one plugin unique for this theme, is a refactor of codrops step form.-->
+    <script src="assets/js/vendor/form.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
